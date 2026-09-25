@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://resistedarchive.world/sitemap.xml
+
+# Disallow admin and checkout pages if you add them later
+User-agent: *
+Disallow: /admin/
+Disallow: /checkout/processing/
