@@ -9,7 +9,7 @@ function renderProducts() {
     <div class="product-card" data-id="${product.id}">
       <div class="product-image">
         ${product.image.startsWith('images/') 
-          ? `<img src="${product.image}" alt="${product.name}" style="width: 100%; height: 100%; object-fit: cover;">`
+          ? `<img src="${product.image}" alt="${product.name}">`
           : product.image
         }
       </div>
