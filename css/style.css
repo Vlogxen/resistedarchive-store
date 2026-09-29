@@ -251,7 +251,7 @@ main {
   justify-content: center;
   color: var(--text-secondary);
   font-size: 1.5rem;
-  padding: var(--space-md);
+  padding: 0.5rem;
 }
 
 .product-image img {
