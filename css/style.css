@@ -180,9 +180,9 @@ main {
 
 .about-section {
   max-width: 900px;
-  margin: 0 auto 0 auto;
+  margin: 0 auto;
   text-align: center;
-  padding: var(--space-lg) var(--space-md) 0.5rem var(--space-md);
+  padding: var(--space-lg) var(--space-md) var(--space-sm) var(--space-md);
 }
 
 .about-content h2 {
@@ -199,12 +199,12 @@ main {
   margin-bottom: var(--space-md);
 }
 
-.about-content p:last-child {
-  margin-bottom: 0;
+.about-content p.last-p {
+  margin-bottom: 0.25rem;
 }
 
 .about-logo {
-  margin-top: 0.5rem;
+  margin-top: 0;
   margin-bottom: 0;
   display: flex;
   justify-content: center;
