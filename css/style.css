@@ -42,7 +42,7 @@ body {
 }
 
 header {
-  background: var(--surface-1);
+  background: #4A4A4A;
   padding: var(--space-md) var(--space-lg);
   position: sticky;
   top: 0;
@@ -64,7 +64,7 @@ header {
   font-size: clamp(1.5rem, 1.3rem + 0.5vw, 2rem);
   font-weight: 700;
   letter-spacing: -0.02em;
-  color: var(--accent);
+  color: #FFFFFF;
 }
 
 .nav-links {
@@ -75,14 +75,14 @@ header {
 }
 
 .nav-links a {
-  color: var(--text-secondary);
+  color: #E9ECEF;
   text-decoration: none;
   transition: color 0.2s;
   font-weight: 500;
 }
 
 .nav-links a:hover {
-  color: var(--accent);
+  color: #FFFFFF;
 }
 
 .cart-icon {
@@ -94,8 +94,8 @@ header {
 }
 
 .cart-count {
-  background: var(--accent);
-  color: var(--surface-0);
+  background: #FFFFFF;
+  color: #000000;
   border-radius: var(--radius-full);
   padding: 0.2rem 0.6rem;
   font-size: 0.875rem;
@@ -103,7 +103,7 @@ header {
 }
 
 .hero {
-  background: linear-gradient(135deg, var(--surface-1) 0%, var(--surface-2) 100%);
+  background: linear-gradient(135deg, #5A5A5A 0%, #6A6A6A 100%);
   padding: var(--space-xl) var(--space-lg);
   text-align: center;
   border-bottom: 1px solid var(--surface-3);
@@ -120,15 +120,12 @@ h1 {
   line-height: 1.1;
   letter-spacing: -0.03em;
   margin-bottom: var(--space-md);
-  background: linear-gradient(135deg, var(--text-primary) 0%, var(--accent) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #FFFFFF;
 }
 
 .hero p {
   font-size: clamp(1.125rem, 1rem + 0.5vw, 1.5rem);
-  color: var(--text-secondary);
+  color: #E9ECEF;
   margin-bottom: var(--space-md);
 }
 
@@ -139,7 +136,7 @@ h1 {
   align-items: center;
   flex-wrap: wrap;
   font-size: clamp(0.875rem, 0.8rem + 0.2vw, 1rem);
-  color: var(--text-secondary);
+  color: #D1D5DB;
   margin-bottom: var(--space-lg);
   text-transform: uppercase;
   letter-spacing: 0.05em;
