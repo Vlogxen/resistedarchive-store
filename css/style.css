@@ -180,9 +180,9 @@ main {
 
 .about-section {
   max-width: 900px;
-  margin: 0 auto var(--space-xl) auto;
+  margin: 0 auto var(--space-md) auto;
   text-align: center;
-  padding: calc(var(--space-xl) * 1.5) var(--space-md) var(--space-xl) var(--space-md);
+  padding: var(--space-lg) var(--space-md) var(--space-md) var(--space-md);
 }
 
 .about-content h2 {
@@ -200,17 +200,17 @@ main {
 }
 
 .about-content p:last-child {
-  margin-bottom: var(--space-sm);
+  margin-bottom: 0;
 }
 
 .about-logo {
-  margin-top: var(--space-md);
+  margin-top: var(--space-sm);
   display: flex;
   justify-content: center;
 }
 
 .about-logo img {
-  max-width: 280px;
+  max-width: 200px;
   width: 100%;
   height: auto;
 }
