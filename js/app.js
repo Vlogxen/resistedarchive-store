@@ -7,13 +7,18 @@ function renderProducts() {
 
   grid.innerHTML = products.map(product => `
     <div class="product-card" data-id="${product.id}">
-      <div class="product-image">${product.image}</div>
+      <div class="product-image">
+        ${product.image.startsWith('images/') 
+          ? `<img src="${product.image}" alt="${product.name}" style="width: 100%; height: 100%; object-fit: cover;">`
+          : product.image
+        }
+      </div>
       <div class="product-info">
         <h3 class="product-name">${product.name}</h3>
         <p class="product-description">${product.description}</p>
         <div class="product-footer">
-          <div class="product-price">${product.price} ${product.currency}</div>
-          <button class="btn add-to-cart-btn" data-id="${product.id}">В корзину</button>
+          <div class="product-price">${product.currency}${product.price}</div>
+          <button class="btn add-to-cart-btn" data-id="${product.id}">Add to Cart</button>
         </div>
       </div>
     </div>
@@ -29,9 +34,9 @@ function renderProducts() {
         cart.addItem(product);
         
         // Визуальная обратная связь
-        e.target.textContent = '✓ Добавлено';
+        e.target.textContent = '✓ Added';
         setTimeout(() => {
-          e.target.textContent = 'В корзину';
+          e.target.textContent = 'Add to Cart';
         }, 1000);
       }
     });
