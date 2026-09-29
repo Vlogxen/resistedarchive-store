@@ -200,11 +200,11 @@ main {
 }
 
 .about-content p:last-child {
-  margin-bottom: var(--space-lg);
+  margin-bottom: var(--space-sm);
 }
 
 .about-logo {
-  margin-top: var(--space-xl);
+  margin-top: var(--space-md);
   display: flex;
   justify-content: center;
 }
